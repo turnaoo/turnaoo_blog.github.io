@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Categories on Hugo Theme Stack</title>
-        <link>https://demo.stack.cai.im/categories/</link>
+        <link>https://turnaoo.top/categories/</link>
         <description>Recent content in Categories on Hugo Theme Stack</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language>
-        <lastBuildDate>Mon, 26 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://demo.stack.cai.im/categories/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Documentation</title>
-        <link>https://demo.stack.cai.im/categories/documentation/</link>
+        <language>zh-cn</language>
+        <lastBuildDate>Mon, 26 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://turnaoo.top/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>文档</title>
+        <link>https://turnaoo.top/categories/documentation/</link>
         <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://demo.stack.cai.im/categories/documentation/</guid>
-        <description>&lt;img src="https://demo.stack.cai.im/categories/documentation/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Documentation" /&gt;</description>
+        <guid>https://turnaoo.top/categories/documentation/</guid>
+        <description>&lt;img src="https://turnaoo.top/categories/documentation/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post 文档" /&gt;</description>
         </item>
         <item>
         <title>Syntax</title>
-        <link>https://demo.stack.cai.im/categories/syntax/</link>
+        <link>https://turnaoo.top/categories/syntax/</link>
         <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://demo.stack.cai.im/categories/syntax/</guid>
+        <guid>https://turnaoo.top/categories/syntax/</guid>
         <description></description>
         </item>
         <item>
         <title>Themes</title>
-        <link>https://demo.stack.cai.im/categories/themes/</link>
+        <link>https://turnaoo.top/categories/themes/</link>
         <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://demo.stack.cai.im/categories/themes/</guid>
+        <guid>https://turnaoo.top/categories/themes/</guid>
         <description></description>
         </item>
         <item>
         <title>Testing</title>
-        <link>https://demo.stack.cai.im/categories/testing/</link>
+        <link>https://turnaoo.top/categories/testing/</link>
         <pubDate>Wed, 12 Jan 2000 00:00:00 +0000</pubDate>
         
-        <guid>https://demo.stack.cai.im/categories/testing/</guid>
+        <guid>https://turnaoo.top/categories/testing/</guid>
         <description></description>
         </item>
         

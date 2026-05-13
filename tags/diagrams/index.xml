@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Diagrams on Hugo Theme Stack</title>
-        <link>https://demo.stack.cai.im/tags/diagrams/</link>
+        <link>https://turnaoo.top/tags/diagrams/</link>
         <description>Recent content in Diagrams on Hugo Theme Stack</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language>
-        <lastBuildDate>Tue, 23 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://demo.stack.cai.im/tags/diagrams/index.xml" rel="self" type="application/rss+xml" /><item>
+        <language>zh-cn</language>
+        <lastBuildDate>Tue, 23 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://turnaoo.top/tags/diagrams/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Mermaid Diagrams</title>
-        <link>https://demo.stack.cai.im/p/mermaid-diagrams/</link>
+        <link>https://turnaoo.top/p/mermaid-diagrams/</link>
         <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://demo.stack.cai.im/p/mermaid-diagrams/</guid>
+        <guid>https://turnaoo.top/p/mermaid-diagrams/</guid>
         <description>&lt;p&gt;This theme supports &lt;a class=&#34;link&#34; href=&#34;https://mermaid.js.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Mermaid&lt;/a&gt; diagrams directly in your Markdown content. Mermaid lets you create diagrams and visualizations using text and code.&lt;/p&gt;
 &lt;h2 id=&#34;about-mermaidjs&#34;&gt;About Mermaid.js
