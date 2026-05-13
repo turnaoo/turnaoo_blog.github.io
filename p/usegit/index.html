@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="關於如何使用 Stack 主題的文章">
-<title>ドキュメント</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Git 目前世界上最先进的分布式版本控制系统\n版本控制系统： 手动控制 自动控制系统 Git与Github的区别\nGit安装：\nGit的使用： 1.本地仓库 1.1 工作流程： git本地操作的三个区域\nGit Repository（Git仓库） 最终确定额文件保存到仓库，成为一个新的版本，并且对他人可见 暂存区 暂存已经修改的文件最后统一提交到git仓库中 工作区（Working Directory）（写代码工作目录） 添加、编辑、修改文件等动作 暂存区的作用：等待所有修改完成，统一提交commit\ngit add test.php 添加到暂存区\ngit status\n1.2 本地仓库操作 repository 每个文件的修改，删除等操作都能跟踪到\n1.进行全局配置操作\n$ git config --global user.name &#34;用户名&#34; $ git config --global user.email &#34;邮箱地址&#34; 2.创建仓库 创建一个空目录： windows中创建 命令行中创建\n$ mkdir pro_name 在命令行中进入这个目录\nGit仓库初始化（让git知道，自己需要管理这个目录）\n进入到工程目录初始化 $ git init 在任意位置，初始化指定的工程目录 $ git init newrepo 表现，执行之后，会在项目目录下创建&quot;.git&quot;的隐藏目录，这个目录是Git所创建的，不能删除，也不能随意更改其中的内容。\nGit常用指令操作 查看当前状态：git status\n添加到缓存区： git add 文件名 说明：git add 指令，可以添加一个文件，也可以同时添加多个文件。 语法1：git add 文件名 添加一个文件 语法2：git add 文件名1 文件名2 文件名3 语法3：git add . 添加当前目录到暂存区中\n">
+<title>Usegit</title>
 
-<link rel='canonical' href='https://turnaoo.top/categories/documentation/documentation/'>
+<link rel='canonical' href='https://turnaoo.top/p/usegit/'>
 
-<link rel="stylesheet" href="/scss/style.min.86591c898bd806857815fbb8c47e8d3fed97c133b78e83d9bfc27b164dd0aa2b.css"><meta property='og:title' content="文檔">
-<meta property='og:description' content="關於如何使用 Stack 主題的文章">
-<meta property='og:url' content='https://turnaoo.top/categories/documentation/documentation/'>
+<link rel="stylesheet" href="/scss/style.min.86591c898bd806857815fbb8c47e8d3fed97c133b78e83d9bfc27b164dd0aa2b.css"><meta property='og:title' content="Usegit">
+<meta property='og:description' content="Git 目前世界上最先进的分布式版本控制系统\n版本控制系统： 手动控制 自动控制系统 Git与Github的区别\nGit安装：\nGit的使用： 1.本地仓库 1.1 工作流程： git本地操作的三个区域\nGit Repository（Git仓库） 最终确定额文件保存到仓库，成为一个新的版本，并且对他人可见 暂存区 暂存已经修改的文件最后统一提交到git仓库中 工作区（Working Directory）（写代码工作目录） 添加、编辑、修改文件等动作 暂存区的作用：等待所有修改完成，统一提交commit\ngit add test.php 添加到暂存区\ngit status\n1.2 本地仓库操作 repository 每个文件的修改，删除等操作都能跟踪到\n1.进行全局配置操作\n$ git config --global user.name &#34;用户名&#34; $ git config --global user.email &#34;邮箱地址&#34; 2.创建仓库 创建一个空目录： windows中创建 命令行中创建\n$ mkdir pro_name 在命令行中进入这个目录\nGit仓库初始化（让git知道，自己需要管理这个目录）\n进入到工程目录初始化 $ git init 在任意位置，初始化指定的工程目录 $ git init newrepo 表现，执行之后，会在项目目录下创建&quot;.git&quot;的隐藏目录，这个目录是Git所创建的，不能删除，也不能随意更改其中的内容。\nGit常用指令操作 查看当前状态：git status\n添加到缓存区： git add 文件名 说明：git add 指令，可以添加一个文件，也可以同时添加多个文件。 语法1：git add 文件名 添加一个文件 语法2：git add 文件名1 文件名2 文件名3 语法3：git add . 添加当前目录到暂存区中\n">
+<meta property='og:url' content='https://turnaoo.top/p/usegit/'>
 <meta property='og:site_name' content='Hugo Theme Stack'>
-<meta property='og:type' content='article'><meta property='article:section' content='Categories' /><meta property='og:image' content='https://turnaoo.top/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg' />
-<meta name="twitter:title" content="文檔">
-<meta name="twitter:description" content="關於如何使用 Stack 主題的文章"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://turnaoo.top/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2026-05-13T14:16:17&#43;08:00'/><meta property='article:modified_time' content='2026-05-13T14:16:17&#43;08:00'/>
+<meta name="twitter:title" content="Usegit">
+<meta name="twitter:description" content="Git 目前世界上最先进的分布式版本控制系统\n版本控制系统： 手动控制 自动控制系统 Git与Github的区别\nGit安装：\nGit的使用： 1.本地仓库 1.1 工作流程： git本地操作的三个区域\nGit Repository（Git仓库） 最终确定额文件保存到仓库，成为一个新的版本，并且对他人可见 暂存区 暂存已经修改的文件最后统一提交到git仓库中 工作区（Working Directory）（写代码工作目录） 添加、编辑、修改文件等动作 暂存区的作用：等待所有修改完成，统一提交commit\ngit add test.php 添加到暂存区\ngit status\n1.2 本地仓库操作 repository 每个文件的修改，删除等操作都能跟踪到\n1.进行全局配置操作\n$ git config --global user.name &#34;用户名&#34; $ git config --global user.email &#34;邮箱地址&#34; 2.创建仓库 创建一个空目录： windows中创建 命令行中创建\n$ mkdir pro_name 在命令行中进入这个目录\nGit仓库初始化（让git知道，自己需要管理这个目录）\n进入到工程目录初始化 $ git init 在任意位置，初始化指定的工程目录 $ git init newrepo 表现，执行之后，会在项目目录下创建&quot;.git&quot;的隐藏目录，这个目录是Git所创建的，不能删除，也不能随意更改其中的内容。\nGit常用指令操作 查看当前状态：git status\n添加到缓存区： git add 文件名 说明：git add 指令，可以添加一个文件，也可以同时添加多个文件。 语法1：git add 文件名 添加一个文件 语法2：git add 文件名1 文件名2 文件名3 语法3：git add . 添加当前目录到暂存区中\n">
     </head>
     <body class="
     article-page
@@ -243,29 +242,17 @@
     
 
             <main class="main full-width">
-    <article class="has-image main-article">
+    <article class="main-article">
     <header class="article-header">
-        <div class="article-image">
-            <a href="/categories/documentation/documentation/">
-                
-                    <img src="/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" loading="lazy" alt="Featured image of post ドキュメント" />
-                
-            </a>
-        </div>
-    
 
     <div class="article-details">
     
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/categories/documentation/documentation/">ドキュメント</a>
+            <a href="/p/usegit/">Usegit</a>
         </h2>
     
-        
-        <h3 class="article-subtitle">
-            Stack テーマの使用方法に関する投稿
-        </h3>
         
     </div>
 
@@ -274,6 +261,19 @@
     
     
     <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published" datetime='2026-05-13T14:16:17&#43;08:00'>5月 13, 2026</time>
+            </div>
         
 
         
@@ -287,7 +287,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 0 分钟
+                    阅读时长: 1 分钟
                 </time>
             </div>
         
@@ -302,7 +302,158 @@
     <section class="article-content">
     
     
-    
+    <p>Git
+目前世界上最先进的分布式<strong>版本控制系统</strong></p>
+<p>版本控制系统：
+手动控制
+<img src=":/0ed25ab8fd3c47e8ba81c69e79591b05"
+	
+	
+	
+	loading="lazy"
+	
+		alt="9ee4613700ece05750ea1b78a7efcb02.png"
+	
+	
+>
+自动控制系统
+<img src=":/5103d19d7a5b49118f3061eabd620253"
+	
+	
+	
+	loading="lazy"
+	
+		alt="20d54472b60b63e86bd17b5304a4974c.png"
+	
+	
+></p>
+<p>Git与Github的区别</p>
+<p>Git安装：</p>
+<p>Git的使用：
+1.本地仓库
+1.1 工作流程：
+git本地操作的三个区域</p>
+<ul>
+<li>Git Repository（Git仓库）
+<ul>
+<li>最终确定额文件保存到仓库，成为一个新的版本，并且对他人可见</li>
+</ul>
+</li>
+<li>暂存区
+<ul>
+<li>暂存已经修改的文件最后统一提交到git仓库中</li>
+</ul>
+</li>
+<li>工作区（Working Directory）（写代码工作目录）
+<ul>
+<li>添加、编辑、修改文件等动作</li>
+</ul>
+</li>
+</ul>
+<p>暂存区的作用：等待所有修改完成，统一提交commit</p>
+<p><img src=":/6150ce07cf3a46709618e4353dd77c3b"
+	
+	
+	
+	loading="lazy"
+	
+		alt="e7d10fb6e340b259066a4902283ba443.png"
+	
+	
+></p>
+<p>git add test.php
+添加到暂存区</p>
+<p>git status</p>
+<p>1.2 本地仓库操作
+repository 每个文件的修改，删除等操作都能跟踪到</p>
+<p>1.进行全局配置操作</p>
+<pre tabindex="0"><code>$ git config --global user.name &#34;用户名&#34;
+$ git config --global user.email &#34;邮箱地址&#34;
+</code></pre><p>2.创建仓库
+创建一个空目录：
+windows中创建
+命令行中创建</p>
+<pre tabindex="0"><code>$ mkdir pro_name
+</code></pre><p>在命令行中进入这个目录</p>
+<p>Git仓库初始化（让git知道，自己需要管理这个目录）</p>
+<pre tabindex="0"><code>进入到工程目录初始化
+$ git init
+
+在任意位置，初始化指定的工程目录
+$ git init newrepo
+</code></pre><p>表现，执行之后，会在项目目录下创建&quot;.git&quot;的隐藏目录，这个目录是Git所创建的，不能删除，也不能随意更改其中的内容。</p>
+<p>Git常用指令操作
+查看当前状态：git status</p>
+<p>添加到缓存区： git add 文件名
+<code>说明：git add 指令，可以添加一个文件，也可以同时添加多个文件。</code>
+<code>语法1：git add 文件名 添加一个文件</code>
+<code>语法2：git add 文件名1 文件名2 文件名3</code>
+<code>语法3：git add .</code>   <code>添加当前目录到暂存区中</code></p>
+<p>提交至版本库： git commit -m &ldquo;注释内容&rdquo;</p>
+<p>注释可以写中文</p>
+<p>Git的版本回退操作
+版本回退分为两步骤操作：
+步骤：
+1.查看版本，确定需要回到的时刻点
+指令：
+<code>$git log</code>
+<code>$git log --pretty=oneline</code> <code>显示一行，常用</code>
+2.回退操作
+指令：
+<code>$git reset --hard 提交编号</code></p>
+<p>3.注意：回到过去之后，想要再回到之前最先的版本的时候，需要使用指令去查看历史操作，以得到最新的commit id
+指令：
+<code>$git reflog</code></p>
+<p>小结：
+1.要想回到过去，必须先得到commit id ，然后通过git reset &ndash;hard 进行回退
+2.想要回到未来，需要使用 git reflog进行历史操作查看，得到最新的commit id
+3.在写回退指令的时候，commit id可以不用写全，git会自动识别</p>
+<h2 id="2远程仓库">2.远程仓库
+</h2><p>2.1远程仓库创建</p>
+<p>2.2两种常见的使用方式
+HTTPS协议使用
+1.创建一个空目录</p>
+<p>2.使用clone指令克隆线上仓库到本地
+语法：
+<code>$git clone 线上仓库地址</code></p>
+<p>3.在仓库上做对应的操作（提交暂存区，提交本地仓库，提交线上仓库，拉取线上仓库）</p>
+<p>提交到线上仓库的指令：<code>$git push</code></p>
+<p>首次往线上仓库提交内容时出现403致命错误，原因是：
+不是任何人都可以往线上仓库提交内容，必须进行鉴权</p>
+<p>需要修改，&quot;.git/config&quot;文件</p>
+<p>拉取线上仓库的指令: <code>$git pull</code></p>
+<p>提醒：
+在每天工作的第一件事就是先git pull 拉取线上最新的版本
+每天下班前要做的是 git push 将本地代码提交到线上仓库</p>
+<p>基于ssh协议</p>
+<p>该方式与前面的https方式相比，只是影响github对于用户的身份鉴权方式，对于git的具体操作（如，提交本地，添加注释，提交远程等操作没有任何影响）</p>
+<p>生成私钥对指令（需要先自行安装openssh）：<code>$ssh-keygen -t rsa -C &quot;注册邮箱&quot;</code></p>
+<p>步骤，创建公私钥对文件</p>
+<p>上传公钥文件内容（.ssh/*.pub)</p>
+<p>一般使用的设备固定，推荐使用ssh方式</p>
+<p>Git的分支操作
+在版本回退的章节里，每次提交后都会有记录，Git把他们串成时间线，形成类似于时间轴的东西，这个时间轴就是一个分支，我们称之为master分支</p>
+<p>在开发的时候往往是团队协作，多人进行开发，因此光有一个分支是无法满足多人同时开发的需求，并且在分支上工作，并不影响其他分支的正常使用</p>
+<pre tabindex="0"><code>分支相关指令
+
+查看分支：
+$git branch
+
+创建分支：
+$git branch 分支名
+
+切换分支:
+$git checkout 分支名
+$git checkout -b 分支名
+-b选项表示创建并切换，相当于是两个操作指令
+
+合并分支：
+$git merge 被合并的分支名
+
+删除分支：
+$git branch -d 分支名
+</code></pre><p>注意：在删除分支的时候，一定要先退出要删除的分支，然后才能删除</p>
+
 </section>
 
 
