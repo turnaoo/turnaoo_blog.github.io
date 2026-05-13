@@ -61,7 +61,7 @@ git本地操作的三个区域&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;暂存区的作用：等待所有修改完成，统一提交commit&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;:/6150ce07cf3a46709618e4353dd77c3b&#34;
+&lt;p&gt;&lt;img src=&#34;C:%5cUsers%5cturnaoo%5cWork%5cmy_stack_blog%5ccontent%5cpost%5cusegit%5ce7d10fb6e340b259066a4902283ba443.png&#34;
 	
 	
 	
@@ -1243,22 +1243,6 @@ graph TD
         <guid>https://turnaoo.top/p/pagination-test-01/</guid>
         <description>&lt;p&gt;This is pagination test post &lt;strong&gt;01&lt;/strong&gt;.&lt;/p&gt;
 </description>
-        </item>
-        <item>
-        <title></title>
-        <link>https://turnaoo.top/_index.ja/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://turnaoo.top/_index.ja/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title></title>
-        <link>https://turnaoo.top/_index.zh-hant-tw/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://turnaoo.top/_index.zh-hant-tw/</guid>
-        <description></description>
         </item>
         <item>
         <title>ドキュメント</title>
