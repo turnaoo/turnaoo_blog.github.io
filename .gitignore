@@ -1,0 +1,12 @@
+*.html
+*.css
+*.js
+*.jpg
+*.png
+*.xml
+page/
+categories/
+tags/
+ts/
+sitemap.xml
+index.xml

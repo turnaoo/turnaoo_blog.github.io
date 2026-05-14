@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Usegit | Turnaoo博客小站</title>
+<meta name="keywords" content="">
+<meta name="description" content="Git
+目前世界上最先进的分布式版本控制系统
+版本控制系统：
+手动控制
+自动控制系统
+Git与Github的区别
+Git安装：
+Git的使用：
+1.本地仓库
+1.1 工作流程：
+git本地操作的三个区域">
+<meta name="author" content="">
+<link rel="canonical" href="https://turnaoo.top/p/usegit/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.cd9298b33628769aa1bc1acebbbfd7aa11ce81dfe03484d479e1907760249a1d.css" integrity="sha256-zZKYszYodpqhvBrOu7/XqhHOgd/gNITUeeGQd2Akmh0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://turnaoo.top/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://turnaoo.top/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://turnaoo.top/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://turnaoo.top/apple-touch-icon.png">
+<link rel="mask-icon" href="https://turnaoo.top/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh-cn" href="https://turnaoo.top/p/usegit/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://turnaoo.top/p/usegit/">
+  <meta property="og:site_name" content="Turnaoo博客小站">
+  <meta property="og:title" content="Usegit">
+  <meta property="og:description" content="Git 目前世界上最先进的分布式版本控制系统
+版本控制系统： 手动控制 自动控制系统
+Git与Github的区别
+Git安装：
+Git的使用： 1.本地仓库 1.1 工作流程： git本地操作的三个区域">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2026-05-13T14:16:17+08:00">
+    <meta property="article:modified_time" content="2026-05-13T14:16:17+08:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Usegit">
+  <meta name="twitter:description" content="Git 目前世界上最先进的分布式版本控制系统
+版本控制系统： 手动控制 自动控制系统
+Git与Github的区别
+Git安装：
+Git的使用： 1.本地仓库 1.1 工作流程： git本地操作的三个区域">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://turnaoo.top/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Usegit",
+      "item": "https://turnaoo.top/p/usegit/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Usegit",
+  "name": "Usegit",
+  "description": "Git 目前世界上最先进的分布式版本控制系统\n版本控制系统： 手动控制 自动控制系统\nGit与Github的区别\nGit安装：\nGit的使用： 1.本地仓库 1.1 工作流程： git本地操作的三个区域\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "Git 目前世界上最先进的分布式版本控制系统\n版本控制系统： 手动控制 自动控制系统\nGit与Github的区别\nGit安装：\nGit的使用： 1.本地仓库 1.1 工作流程： git本地操作的三个区域\nGit Repository（Git仓库） 最终确定额文件保存到仓库，成为一个新的版本，并且对他人可见 暂存区 暂存已经修改的文件最后统一提交到git仓库中 工作区（Working Directory）（写代码工作目录） 添加、编辑、修改文件等动作 暂存区的作用：等待所有修改完成，统一提交commit\ngit add test.php 添加到暂存区\ngit status\n1.2 本地仓库操作 repository 每个文件的修改，删除等操作都能跟踪到\n1.进行全局配置操作\n$ git config --global user.name \"用户名\" $ git config --global user.email \"邮箱地址\" 2.创建仓库 创建一个空目录： windows中创建 命令行中创建\n$ mkdir pro_name 在命令行中进入这个目录\nGit仓库初始化（让git知道，自己需要管理这个目录）\n进入到工程目录初始化 $ git init 在任意位置，初始化指定的工程目录 $ git init newrepo 表现，执行之后，会在项目目录下创建\".git\"的隐藏目录，这个目录是Git所创建的，不能删除，也不能随意更改其中的内容。\nGit常用指令操作 查看当前状态：git status\n添加到缓存区： git add 文件名 说明：git add 指令，可以添加一个文件，也可以同时添加多个文件。 语法1：git add 文件名 添加一个文件 语法2：git add 文件名1 文件名2 文件名3 语法3：git add . 添加当前目录到暂存区中\n提交至版本库： git commit -m “注释内容”\n注释可以写中文\nGit的版本回退操作 版本回退分为两步骤操作： 步骤： 1.查看版本，确定需要回到的时刻点 指令： $git log $git log --pretty=oneline 显示一行，常用 2.回退操作 指令： $git reset --hard 提交编号\n3.注意：回到过去之后，想要再回到之前最先的版本的时候，需要使用指令去查看历史操作，以得到最新的commit id 指令： $git reflog\n小结： 1.要想回到过去，必须先得到commit id ，然后通过git reset –hard 进行回退 2.想要回到未来，需要使用 git reflog进行历史操作查看，得到最新的commit id 3.在写回退指令的时候，commit id可以不用写全，git会自动识别\n2.远程仓库 2.1远程仓库创建\n2.2两种常见的使用方式 HTTPS协议使用 1.创建一个空目录\n2.使用clone指令克隆线上仓库到本地 语法： $git clone 线上仓库地址\n3.在仓库上做对应的操作（提交暂存区，提交本地仓库，提交线上仓库，拉取线上仓库）\n提交到线上仓库的指令：$git push\n首次往线上仓库提交内容时出现403致命错误，原因是： 不是任何人都可以往线上仓库提交内容，必须进行鉴权\n需要修改，\".git/config\"文件\n拉取线上仓库的指令: $git pull\n提醒： 在每天工作的第一件事就是先git pull 拉取线上最新的版本 每天下班前要做的是 git push 将本地代码提交到线上仓库\n基于ssh协议\n该方式与前面的https方式相比，只是影响github对于用户的身份鉴权方式，对于git的具体操作（如，提交本地，添加注释，提交远程等没有任何影响）\n生成私钥对指令（需要先自行安装openssh）：$ssh-keygen -t rsa -C \"注册邮箱\"\n步骤，创建公私钥对文件\n上传公钥文件内容（.ssh/*.pub)\n一般使用的设备固定，推荐使用ssh方式\nGit的分支操作 在版本回退的章节里，每次提交后都会有记录，Git把他们串成时间线，形成类似于时间轴的东西，这个时间轴就是一个分支，我们称之为master分支\n在开发的时候往往是团队协作，多人进行开发，因此光有一个分支是无法满足多人同时开发的需求，并且在分支上工作，并不影响其他分支的正常使用\n分支相关指令 查看分支： $git branch 创建分支： $git branch 分支名 切换分支: $git checkout 分支名 $git checkout -b 分支名 -b选项表示创建并切换，相当于是两个操作指令 合并分支： $git merge 被合并的分支名 删除分支： $git branch -d 分支名 注意：在删除分支的时候，一定要先退出要删除的分支，然后才能删除\n",
+  "wordCount" : "1609",
+  "inLanguage": "zh-cn",
+  "datePublished": "2026-05-13T14:16:17+08:00",
+  "dateModified": "2026-05-13T14:16:17+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://turnaoo.top/p/usegit/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Turnaoo博客小站",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://turnaoo.top/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="https://turnaoo.top/" accesskey="h" title="Turnaoo博客小站 (Alt + H)">Turnaoo博客小站</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="https://turnaoo.top/" title="首页">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://turnaoo.top/archives" title="博客">
+                    <span>博客</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://turnaoo.top/search" title="搜索 (Alt &#43; /)" accesskey=/>
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://turnaoo.top/about" title="关于作者">
+                    <span>关于作者</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://turnaoo.top/links" title="友链">
+                    <span>友链</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Usegit
+    </h1>
+    <div class="post-meta">
+
+<span title='2026-05-13 14:16:17 +0800 CST'>May 13, 2026</span>
+
+</div>
+  </header> 
+  <div class="post-content md-content"><p>Git
+目前世界上最先进的分布式<strong>版本控制系统</strong></p>
+<p>版本控制系统：
+手动控制
+自动控制系统</p>
+<p>Git与Github的区别</p>
+<p>Git安装：</p>
+<p>Git的使用：
+1.本地仓库
+1.1 工作流程：
+git本地操作的三个区域</p>
+<ul>
+<li>Git Repository（Git仓库）
+<ul>
+<li>最终确定额文件保存到仓库，成为一个新的版本，并且对他人可见</li>
+</ul>
+</li>
+<li>暂存区
+<ul>
+<li>暂存已经修改的文件最后统一提交到git仓库中</li>
+</ul>
+</li>
+<li>工作区（Working Directory）（写代码工作目录）
+<ul>
+<li>添加、编辑、修改文件等动作</li>
+</ul>
+</li>
+</ul>
+<p>暂存区的作用：等待所有修改完成，统一提交commit</p>
+<p><img alt="e7d10fb6e340b259066a4902283ba443.png" loading="lazy" src="../e7d10fb6e340b259066a4902283ba443.png"></p>
+<p>git add test.php
+添加到暂存区</p>
+<p>git status</p>
+<p>1.2 本地仓库操作
+repository 每个文件的修改，删除等操作都能跟踪到</p>
+<p>1.进行全局配置操作</p>
+<pre tabindex="0"><code>$ git config --global user.name &#34;用户名&#34;
+$ git config --global user.email &#34;邮箱地址&#34;
+</code></pre><p>2.创建仓库
+创建一个空目录：
+windows中创建
+命令行中创建</p>
+<pre tabindex="0"><code>$ mkdir pro_name
+</code></pre><p>在命令行中进入这个目录</p>
+<p>Git仓库初始化（让git知道，自己需要管理这个目录）</p>
+<pre tabindex="0"><code>进入到工程目录初始化
+$ git init
+
+在任意位置，初始化指定的工程目录
+$ git init newrepo
+</code></pre><p>表现，执行之后，会在项目目录下创建&quot;.git&quot;的隐藏目录，这个目录是Git所创建的，不能删除，也不能随意更改其中的内容。</p>
+<p>Git常用指令操作
+查看当前状态：git status</p>
+<p>添加到缓存区： git add 文件名
+<code>说明：git add 指令，可以添加一个文件，也可以同时添加多个文件。</code>
+<code>语法1：git add 文件名 添加一个文件</code>
+<code>语法2：git add 文件名1 文件名2 文件名3</code>
+<code>语法3：git add .</code>   <code>添加当前目录到暂存区中</code></p>
+<p>提交至版本库： git commit -m &ldquo;注释内容&rdquo;</p>
+<p>注释可以写中文</p>
+<p>Git的版本回退操作
+版本回退分为两步骤操作：
+步骤：
+1.查看版本，确定需要回到的时刻点
+指令：
+<code>$git log</code>
+<code>$git log --pretty=oneline</code> <code>显示一行，常用</code>
+2.回退操作
+指令：
+<code>$git reset --hard 提交编号</code></p>
+<p>3.注意：回到过去之后，想要再回到之前最先的版本的时候，需要使用指令去查看历史操作，以得到最新的commit id
+指令：
+<code>$git reflog</code></p>
+<p>小结：
+1.要想回到过去，必须先得到commit id ，然后通过git reset &ndash;hard 进行回退
+2.想要回到未来，需要使用 git reflog进行历史操作查看，得到最新的commit id
+3.在写回退指令的时候，commit id可以不用写全，git会自动识别</p>
+<h2 id="2远程仓库">2.远程仓库<a hidden class="anchor" aria-hidden="true" href="#2远程仓库">#</a></h2>
+<p>2.1远程仓库创建</p>
+<p>2.2两种常见的使用方式
+HTTPS协议使用
+1.创建一个空目录</p>
+<p>2.使用clone指令克隆线上仓库到本地
+语法：
+<code>$git clone 线上仓库地址</code></p>
+<p>3.在仓库上做对应的操作（提交暂存区，提交本地仓库，提交线上仓库，拉取线上仓库）</p>
+<p>提交到线上仓库的指令：<code>$git push</code></p>
+<p>首次往线上仓库提交内容时出现403致命错误，原因是：
+不是任何人都可以往线上仓库提交内容，必须进行鉴权</p>
+<p>需要修改，&quot;.git/config&quot;文件</p>
+<p>拉取线上仓库的指令: <code>$git pull</code></p>
+<p>提醒：
+在每天工作的第一件事就是先git pull 拉取线上最新的版本
+每天下班前要做的是 git push 将本地代码提交到线上仓库</p>
+<p>基于ssh协议</p>
+<p>该方式与前面的https方式相比，只是影响github对于用户的身份鉴权方式，对于git的具体操作（如，提交本地，添加注释，提交远程等没有任何影响）</p>
+<p>生成私钥对指令（需要先自行安装openssh）：<code>$ssh-keygen -t rsa -C &quot;注册邮箱&quot;</code></p>
+<p>步骤，创建公私钥对文件</p>
+<p>上传公钥文件内容（.ssh/*.pub)</p>
+<p>一般使用的设备固定，推荐使用ssh方式</p>
+<p>Git的分支操作
+在版本回退的章节里，每次提交后都会有记录，Git把他们串成时间线，形成类似于时间轴的东西，这个时间轴就是一个分支，我们称之为master分支</p>
+<p>在开发的时候往往是团队协作，多人进行开发，因此光有一个分支是无法满足多人同时开发的需求，并且在分支上工作，并不影响其他分支的正常使用</p>
+<pre tabindex="0"><code>分支相关指令
+
+查看分支：
+$git branch
+
+创建分支：
+$git branch 分支名
+
+切换分支:
+$git checkout 分支名
+$git checkout -b 分支名
+-b选项表示创建并切换，相当于是两个操作指令
+
+合并分支：
+$git merge 被合并的分支名
+
+删除分支：
+$git branch -d 分支名
+</code></pre><p>注意：在删除分支的时候，一定要先退出要删除的分支，然后才能删除</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>2026-Turnaoo</span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
