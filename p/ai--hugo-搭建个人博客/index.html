@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>AI &#43; Hugo 搭建个人博客 | Turnaoo博客小站</title>
+<meta name="keywords" content="Hugo, PaperMod, AI, 博客">
+<meta name="description" content="AI &#43; Hugo 搭建个人博客
+最近我用 AI 辅助 &#43; Hugo 搭建了这个个人博客，记录一下整个过程和心得。
+为什么选择 Hugo？
+Hugo 是一个用 Go 语言编写的静态网站生成器，以速度快、配置简单而著称：">
+<meta name="author" content="">
+<link rel="canonical" href="https://turnaoo.top/p/ai--hugo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.cd9298b33628769aa1bc1acebbbfd7aa11ce81dfe03484d479e1907760249a1d.css" integrity="sha256-zZKYszYodpqhvBrOu7/XqhHOgd/gNITUeeGQd2Akmh0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://turnaoo.top/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://turnaoo.top/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://turnaoo.top/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://turnaoo.top/apple-touch-icon.png">
+<link rel="mask-icon" href="https://turnaoo.top/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh-cn" href="https://turnaoo.top/p/ai--hugo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://turnaoo.top/p/ai--hugo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
+  <meta property="og:site_name" content="Turnaoo博客小站">
+  <meta property="og:title" content="AI &#43; Hugo 搭建个人博客">
+  <meta property="og:description" content="AI &#43; Hugo 搭建个人博客 最近我用 AI 辅助 &#43; Hugo 搭建了这个个人博客，记录一下整个过程和心得。
+为什么选择 Hugo？ Hugo 是一个用 Go 语言编写的静态网站生成器，以速度快、配置简单而著称：">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2026-05-15T00:00:00+08:00">
+    <meta property="article:modified_time" content="2026-05-15T00:00:00+08:00">
+    <meta property="article:tag" content="Hugo">
+    <meta property="article:tag" content="PaperMod">
+    <meta property="article:tag" content="AI">
+    <meta property="article:tag" content="博客">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="AI &#43; Hugo 搭建个人博客">
+  <meta name="twitter:description" content="AI &#43; Hugo 搭建个人博客 最近我用 AI 辅助 &#43; Hugo 搭建了这个个人博客，记录一下整个过程和心得。
+为什么选择 Hugo？ Hugo 是一个用 Go 语言编写的静态网站生成器，以速度快、配置简单而著称：">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://turnaoo.top/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "AI + Hugo 搭建个人博客",
+      "item": "https://turnaoo.top/p/ai--hugo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "AI + Hugo 搭建个人博客",
+  "name": "AI \u002b Hugo 搭建个人博客",
+  "description": "AI + Hugo 搭建个人博客 最近我用 AI 辅助 + Hugo 搭建了这个个人博客，记录一下整个过程和心得。\n为什么选择 Hugo？ Hugo 是一个用 Go 语言编写的静态网站生成器，以速度快、配置简单而著称：\n",
+  "keywords": [
+    "Hugo", "PaperMod", "AI", "博客"
+  ],
+  "articleBody": "AI + Hugo 搭建个人博客 最近我用 AI 辅助 + Hugo 搭建了这个个人博客，记录一下整个过程和心得。\n为什么选择 Hugo？ Hugo 是一个用 Go 语言编写的静态网站生成器，以速度快、配置简单而著称：\n🚀 超快构建速度 - 相比 Jekyll、Hexo 等工具，Hugo 的构建速度堪称惊人 📦 零依赖 - 是一个独立的二进制文件，无需安装额外环境 🎨 丰富的主题 - 社区贡献了大量精美主题 📝 Markdown 支持 - 专注于内容创作，无需关心样式 为什么选择 PaperMod 主题？ PaperMod 是一个简洁高效的 Hugo 主题，特别适合个人博客：\n📱 响应式设计 - 完美适配各种设备 🌙 暗色模式 - 自动跟随系统主题 🔍 内置搜索 - FuseJS 实现的快速搜索 📊 SEO 友好 - 支持 OpenGraph、JSON-LD 等 AI 如何辅助开发？ 在整个搭建过程中，AI 帮了我大忙：\n主题配置 - 帮我理解和配置 PaperMod 的各种参数 问题排查 - 解决了图片路径、CSS 加载等各种坑 内容创作 - 辅助写代码片段和技术文档 部署优化 - 配置 GitHub Actions 实现自动化部署 AI 不是替代者，而是强大的助手。它让我能专注于创意，而把重复性的工作交给它完成。\n技术栈 框架：Hugo + PaperMod 主题 图床：七牛云 / 直接上传 部署：GitHub Pages + GitHub Actions 域名：turnaoo.top 未来计划 📚 持续输出技术文章 🎮 分享游戏开发心得 🤖 探索 AI 在游戏开发中的应用 🚀 不断完善博客功能和内容 如果你也想搭建个人博客，欢迎交流！有问题可以在评论区留言 💬\nLife is Passion!\n",
+  "wordCount" : "549",
+  "inLanguage": "zh-cn",
+  "datePublished": "2026-05-15T00:00:00+08:00",
+  "dateModified": "2026-05-15T00:00:00+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://turnaoo.top/p/ai--hugo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Turnaoo博客小站",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://turnaoo.top/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="https://turnaoo.top/" accesskey="h" title="Turnaoo博客小站 (Alt + H)">Turnaoo博客小站</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="https://turnaoo.top/" title="首页">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://turnaoo.top/archives" title="博客">
+                    <span>博客</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://turnaoo.top/search" title="搜索 (Alt &#43; /)" accesskey=/>
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://turnaoo.top/about" title="关于作者">
+                    <span>关于作者</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://turnaoo.top/links" title="友链">
+                    <span>友链</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      AI &#43; Hugo 搭建个人博客
+    </h1>
+    <div class="post-meta">
+
+<span title='2026-05-15 00:00:00 +0800 CST'>May 15, 2026</span>
+
+</div>
+  </header> 
+  <div class="post-content md-content"><h1 id="ai--hugo-搭建个人博客">AI + Hugo 搭建个人博客<a hidden class="anchor" aria-hidden="true" href="#ai--hugo-搭建个人博客">#</a></h1>
+<p>最近我用 <strong>AI 辅助</strong> + <strong>Hugo</strong> 搭建了这个个人博客，记录一下整个过程和心得。</p>
+<h2 id="为什么选择-hugo">为什么选择 Hugo？<a hidden class="anchor" aria-hidden="true" href="#为什么选择-hugo">#</a></h2>
+<p>Hugo 是一个用 Go 语言编写的静态网站生成器，以<strong>速度快</strong>、<strong>配置简单</strong>而著称：</p>
+<ul>
+<li>🚀 <strong>超快构建速度</strong> - 相比 Jekyll、Hexo 等工具，Hugo 的构建速度堪称惊人</li>
+<li>📦 <strong>零依赖</strong> - 是一个独立的二进制文件，无需安装额外环境</li>
+<li>🎨 <strong>丰富的主题</strong> - 社区贡献了大量精美主题</li>
+<li>📝 <strong>Markdown 支持</strong> - 专注于内容创作，无需关心样式</li>
+</ul>
+<h2 id="为什么选择-papermod-主题">为什么选择 PaperMod 主题？<a hidden class="anchor" aria-hidden="true" href="#为什么选择-papermod-主题">#</a></h2>
+<p>PaperMod 是一个简洁高效的 Hugo 主题，特别适合个人博客：</p>
+<ul>
+<li>📱 <strong>响应式设计</strong> - 完美适配各种设备</li>
+<li>🌙 <strong>暗色模式</strong> - 自动跟随系统主题</li>
+<li>🔍 <strong>内置搜索</strong> - FuseJS 实现的快速搜索</li>
+<li>📊 <strong>SEO 友好</strong> - 支持 OpenGraph、JSON-LD 等</li>
+</ul>
+<h2 id="ai-如何辅助开发">AI 如何辅助开发？<a hidden class="anchor" aria-hidden="true" href="#ai-如何辅助开发">#</a></h2>
+<p>在整个搭建过程中，AI 帮了我大忙：</p>
+<ol>
+<li><strong>主题配置</strong> - 帮我理解和配置 PaperMod 的各种参数</li>
+<li><strong>问题排查</strong> - 解决了图片路径、CSS 加载等各种坑</li>
+<li><strong>内容创作</strong> - 辅助写代码片段和技术文档</li>
+<li><strong>部署优化</strong> - 配置 GitHub Actions 实现自动化部署</li>
+</ol>
+<blockquote>
+<p>AI 不是替代者，而是强大的助手。它让我能专注于创意，而把重复性的工作交给它完成。</p>
+</blockquote>
+<h2 id="技术栈">技术栈<a hidden class="anchor" aria-hidden="true" href="#技术栈">#</a></h2>
+<ul>
+<li><strong>框架</strong>：Hugo + PaperMod 主题</li>
+<li><strong>图床</strong>：七牛云 / 直接上传</li>
+<li><strong>部署</strong>：GitHub Pages + GitHub Actions</li>
+<li><strong>域名</strong>：turnaoo.top</li>
+</ul>
+<h2 id="未来计划">未来计划<a hidden class="anchor" aria-hidden="true" href="#未来计划">#</a></h2>
+<ol>
+<li>📚 持续输出技术文章</li>
+<li>🎮 分享游戏开发心得</li>
+<li>🤖 探索 AI 在游戏开发中的应用</li>
+<li>🚀 不断完善博客功能和内容</li>
+</ol>
+<hr>
+<p>如果你也想搭建个人博客，欢迎交流！有问题可以在评论区留言 💬</p>
+<p><strong>Life is Passion!</strong></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://turnaoo.top/tags/hugo/">Hugo</a></li>
+      <li><a href="https://turnaoo.top/tags/papermod/">PaperMod</a></li>
+      <li><a href="https://turnaoo.top/tags/ai/">AI</a></li>
+      <li><a href="https://turnaoo.top/tags/%E5%8D%9A%E5%AE%A2/">博客</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>2026-Turnaoo</span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
