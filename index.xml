@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Turnaoo博客小站</title>
+    <link>https://turnaoo.top/</link>
+    <description>Recent content on Turnaoo博客小站</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <copyright>2026-Turnaoo</copyright>
+    <lastBuildDate>Fri, 15 May 2026 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://turnaoo.top/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI &#43; Hugo 搭建个人博客</title>
+      <link>https://turnaoo.top/p/ai-hugo-blog/</link>
+      <pubDate>Fri, 15 May 2026 00:00:00 +0800</pubDate>
+      <guid>https://turnaoo.top/p/ai-hugo-blog/</guid>
+      <description>&lt;h1 id=&#34;ai--hugo-搭建个人博客&#34;&gt;AI + Hugo 搭建个人博客&lt;/h1&gt;
+&lt;p&gt;最近我用 &lt;strong&gt;AI 辅助&lt;/strong&gt; + &lt;strong&gt;Hugo&lt;/strong&gt; 搭建了这个个人博客，记录一下整个过程和心得。&lt;/p&gt;
+&lt;h2 id=&#34;为什么选择-hugo&#34;&gt;为什么选择 Hugo？&lt;/h2&gt;
+&lt;p&gt;Hugo 是一个用 Go 语言编写的静态网站生成器，以&lt;strong&gt;速度快&lt;/strong&gt;、&lt;strong&gt;配置简单&lt;/strong&gt;而著称：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Usegit</title>
+      <link>https://turnaoo.top/p/usegit/</link>
+      <pubDate>Wed, 13 May 2026 14:16:17 +0800</pubDate>
+      <guid>https://turnaoo.top/p/usegit/</guid>
+      <description>&lt;p&gt;Git
+目前世界上最先进的分布式&lt;strong&gt;版本控制系统&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;版本控制系统：
+手动控制
+自动控制系统&lt;/p&gt;
+&lt;p&gt;Git与Github的区别&lt;/p&gt;
+&lt;p&gt;Git安装：&lt;/p&gt;
+&lt;p&gt;Git的使用：
+1.本地仓库
+1.1 工作流程：
+git本地操作的三个区域&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>关于作者</title>
+      <link>https://turnaoo.top/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://turnaoo.top/about/</guid>
+      <description>关于作者的简介</description>
+    </item>
+    <item>
+      <title>友链</title>
+      <link>https://turnaoo.top/links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://turnaoo.top/links/</guid>
+      <description>友情链接</description>
+    </item>
+  </channel>
+</rss>
