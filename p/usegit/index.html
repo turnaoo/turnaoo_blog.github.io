@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="auto" data-theme="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Usegit | Turnaoo博客小站</title>
 <meta name="keywords" content="">
 <meta name="description" content="Git
@@ -19,16 +19,16 @@ Git的使用：
 1.1 工作流程：
 git本地操作的三个区域">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/p/usegit/">
+<link rel="canonical" href="https://turnaoo.top/p/usegit/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.cd9298b33628769aa1bc1acebbbfd7aa11ce81dfe03484d479e1907760249a1d.css" integrity="sha256-zZKYszYodpqhvBrOu7/XqhHOgd/gNITUeeGQd2Akmh0=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://turnaoo.top/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://turnaoo.top/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://turnaoo.top/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://turnaoo.top/apple-touch-icon.png">
+<link rel="mask-icon" href="https://turnaoo.top/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="zh-cn" href="http://localhost:1313/p/usegit/">
+<link rel="alternate" hreflang="zh-cn" href="https://turnaoo.top/p/usegit/">
 <noscript>
     <style>
         #theme-toggle,
@@ -74,13 +74,84 @@ git本地操作的三个区域">
         document.querySelector("html").dataset.theme = 'light';
     }
 
+</script><meta property="og:url" content="https://turnaoo.top/p/usegit/">
+  <meta property="og:site_name" content="Turnaoo博客小站">
+  <meta property="og:title" content="Usegit">
+  <meta property="og:description" content="Git 目前世界上最先进的分布式版本控制系统
+版本控制系统： 手动控制 自动控制系统
+Git与Github的区别
+Git安装：
+Git的使用： 1.本地仓库 1.1 工作流程： git本地操作的三个区域">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2026-05-13T14:16:17+08:00">
+    <meta property="article:modified_time" content="2026-05-13T14:16:17+08:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Usegit">
+  <meta name="twitter:description" content="Git 目前世界上最先进的分布式版本控制系统
+版本控制系统： 手动控制 自动控制系统
+Git与Github的区别
+Git安装：
+Git的使用： 1.本地仓库 1.1 工作流程： git本地操作的三个区域">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://turnaoo.top/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Usegit",
+      "item": "https://turnaoo.top/p/usegit/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Usegit",
+  "name": "Usegit",
+  "description": "Git 目前世界上最先进的分布式版本控制系统\n版本控制系统： 手动控制 自动控制系统\nGit与Github的区别\nGit安装：\nGit的使用： 1.本地仓库 1.1 工作流程： git本地操作的三个区域\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "Git 目前世界上最先进的分布式版本控制系统\n版本控制系统： 手动控制 自动控制系统\nGit与Github的区别\nGit安装：\nGit的使用： 1.本地仓库 1.1 工作流程： git本地操作的三个区域\nGit Repository（Git仓库） 最终确定额文件保存到仓库，成为一个新的版本，并且对他人可见 暂存区 暂存已经修改的文件最后统一提交到git仓库中 工作区（Working Directory）（写代码工作目录） 添加、编辑、修改文件等动作 暂存区的作用：等待所有修改完成，统一提交commit\ngit add test.php 添加到暂存区\ngit status\n1.2 本地仓库操作 repository 每个文件的修改，删除等操作都能跟踪到\n1.进行全局配置操作\n$ git config --global user.name \"用户名\"\r$ git config --global user.email \"邮箱地址\" 2.创建仓库 创建一个空目录： windows中创建 命令行中创建\n$ mkdir pro_name 在命令行中进入这个目录\nGit仓库初始化（让git知道，自己需要管理这个目录）\n进入到工程目录初始化\r$ git init\r在任意位置，初始化指定的工程目录\r$ git init newrepo 表现，执行之后，会在项目目录下创建\".git\"的隐藏目录，这个目录是Git所创建的，不能删除，也不能随意更改其中的内容。\nGit常用指令操作 查看当前状态：git status\n添加到缓存区： git add 文件名 说明：git add 指令，可以添加一个文件，也可以同时添加多个文件。 语法1：git add 文件名 添加一个文件 语法2：git add 文件名1 文件名2 文件名3 语法3：git add . 添加当前目录到缓存区中\n提交至版本库： git commit -m “注释内容”\n注释可以写中文\nGit的版本回退操作 版本回退分为两步骤操作： 步骤： 1.查看版本，确定需要回到的时刻点 指令： $git log $git log --pretty=oneline 显示一行，常用 2.回退操作 指令： $git reset --hard 提交编号\n3.注意：回到过去之后，想要再回到之前最先的版本的时候，需要使用指令去查看历史操作，以得到最新的commit id 指令： $git reflog\n小结： 1.要想回到过去，必须先得到commit id ，然后通过git reset –hard 进行回退 2.想要回到未来，需要使用 git reflog进行历史操作查看，得到最新的commit id 3.在写回退指令的时候，commit id可以不用写全，git会自动识别\n2.远程仓库 2.1远程仓库创建\n2.2两种常见的使用方式 HTTPS协议使用 1.创建一个空目录\n2.使用clone指令克隆线上仓库到本地 语法： $git clone 线上仓库地址\n3.在仓库上做对应的操作（提交暂存区，提交本地仓库，提交线上仓库，拉取线上仓库）\n提交到线上仓库的指令：$git push\n首次往线上仓库提交内容时出现403致命错误，原因是： 不是任何人都可以往线上仓库提交内容，必须进行鉴权\n需要修改，\".git/config\"文件\n拉取线上仓库的指令: $git pull\n提醒： 在每天工作的第一件事就是先git pull 拉取线上最新的版本 每天下班前要做的是 git push 将本地代码提交到线上仓库\n基于ssh协议\n该方式与前面的https方式相比，只是影响github对于用户的身份鉴权方式，对于git的具体操作（如，提交本地，添加注释，提交远程等没有任何影响）\n生成私钥对指令（需要先自行安装openssh）：$ssh-keygen -t rsa -C \"注册邮箱\"\n步骤，创建公私钥对文件\n上传公钥文件内容（.ssh/*.pub)\n一般使用的设备固定，推荐使用ssh方式\nGit的分支操作 在版本回退的章节里，每次提交后都会有记录，Git把他们串成时间线，形成类似于时间轴的东西，这个时间轴就是一个分支，我们称之为master分支\n在开发的时候往往是团队协作，多人进行开发，因此光有一个分支是无法满足多人同时开发的需求，并且在分支上工作，并不影响其他分支的正常使用\n分支相关指令\r查看分支：\r$git branch\r创建分支：\r$git branch 分支名\r切换分支:\r$git checkout 分支名\r$git checkout -b 分支名\r-b选项表示创建并切换，相当于是两个操作指令\r合并分支：\r$git merge 被合并的分支名\r删除分支：\r$git branch -d 分支名 注意：在删除分支的时候，一定要先退出要删除的分支，然后才能删除\n",
+  "wordCount" : "1609",
+  "inLanguage": "zh-cn",
+  "datePublished": "2026-05-13T14:16:17+08:00",
+  "dateModified": "2026-05-13T14:16:17+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://turnaoo.top/p/usegit/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Turnaoo博客小站",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://turnaoo.top/favicon.ico"
+    }
+  }
+}
 </script>
 </head>
 <body id="top">
     <header class="header">
     <nav class="header-nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Turnaoo博客小站 (Alt + H)">Turnaoo博客小站</a>
+            <a href="https://turnaoo.top/" accesskey="h" title="Turnaoo博客小站 (Alt + H)">Turnaoo博客小站</a>
             <div class="logo-switches">
                 <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
@@ -106,27 +177,27 @@ git本地操作的三个区域">
         </div>
         <ul id="menu" class="menu">
             <li>
-                <a href="http://localhost:1313/" title="首页">
+                <a href="https://turnaoo.top/" title="首页">
                     <span>首页</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/archives" title="博客">
+                <a href="https://turnaoo.top/archives" title="博客">
                     <span>博客</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/search" title="搜索 (Alt &#43; /)" accesskey=/>
+                <a href="https://turnaoo.top/search" title="搜索 (Alt &#43; /)" accesskey=/>
                     <span>搜索</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/about" title="关于作者">
+                <a href="https://turnaoo.top/about" title="关于作者">
                     <span>关于作者</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/links" title="友链">
+                <a href="https://turnaoo.top/links" title="友链">
                     <span>友链</span>
                 </a>
             </li>

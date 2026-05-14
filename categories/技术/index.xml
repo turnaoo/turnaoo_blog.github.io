@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>技术 on Turnaoo博客小站</title>
-    <link>http://localhost:1313/categories/%E6%8A%80%E6%9C%AF/</link>
+    <link>https://turnaoo.top/categories/%E6%8A%80%E6%9C%AF/</link>
     <description>Recent content in 技术 on Turnaoo博客小站</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <copyright>2026-Turnaoo</copyright>
     <lastBuildDate>Fri, 15 May 2026 00:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://turnaoo.top/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI &#43; Hugo 搭建个人博客</title>
-      <link>http://localhost:1313/p/ai-hugo-blog/</link>
+      <link>https://turnaoo.top/p/ai-hugo-blog/</link>
       <pubDate>Fri, 15 May 2026 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/p/ai-hugo-blog/</guid>
+      <guid>https://turnaoo.top/p/ai-hugo-blog/</guid>
       <description>&lt;h1 id=&#34;ai--hugo-搭建个人博客&#34;&gt;AI + Hugo 搭建个人博客&lt;/h1&gt;
 &lt;p&gt;最近我用 &lt;strong&gt;AI 辅助&lt;/strong&gt; + &lt;strong&gt;Hugo&lt;/strong&gt; 搭建了这个个人博客，记录一下整个过程和心得。&lt;/p&gt;
 &lt;h2 id=&#34;为什么选择-hugo&#34;&gt;为什么选择 Hugo？&lt;/h2&gt;
