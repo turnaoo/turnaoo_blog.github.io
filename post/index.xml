@@ -7,63 +7,17 @@
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <copyright>2026-Turnaoo</copyright>
-    <lastBuildDate>Wed, 12 Jan 2000 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 15 May 2026 00:00:00 +0800</lastBuildDate>
     <atom:link href="https://turnaoo.top/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Pagination Test 12</title>
-      <link>https://turnaoo.top/p/pagination-test-12/</link>
-      <pubDate>Wed, 12 Jan 2000 00:00:00 +0800</pubDate>
-      <guid>https://turnaoo.top/p/pagination-test-12/</guid>
-      <description>Test post 12 for pagination behavior.</description>
-    </item>
-    <item>
-      <title>Pagination Test 11</title>
-      <link>https://turnaoo.top/p/pagination-test-11/</link>
-      <pubDate>Tue, 11 Jan 2000 00:00:00 +0800</pubDate>
-      <guid>https://turnaoo.top/p/pagination-test-11/</guid>
-      <description>Test post 11 for pagination behavior.</description>
-    </item>
-    <item>
-      <title>Pagination Test 10</title>
-      <link>https://turnaoo.top/p/pagination-test-10/</link>
-      <pubDate>Mon, 10 Jan 2000 00:00:00 +0800</pubDate>
-      <guid>https://turnaoo.top/p/pagination-test-10/</guid>
-      <description>Test post 10 for pagination behavior.</description>
-    </item>
-    <item>
-      <title>Pagination Test 09</title>
-      <link>https://turnaoo.top/p/pagination-test-09/</link>
-      <pubDate>Sun, 09 Jan 2000 00:00:00 +0800</pubDate>
-      <guid>https://turnaoo.top/p/pagination-test-09/</guid>
-      <description>Test post 09 for pagination behavior.</description>
-    </item>
-    <item>
-      <title>Pagination Test 08</title>
-      <link>https://turnaoo.top/p/pagination-test-08/</link>
-      <pubDate>Sat, 08 Jan 2000 00:00:00 +0800</pubDate>
-      <guid>https://turnaoo.top/p/pagination-test-08/</guid>
-      <description>Test post 08 for pagination behavior.</description>
-    </item>
-    <item>
-      <title>Pagination Test 07</title>
-      <link>https://turnaoo.top/p/pagination-test-07/</link>
-      <pubDate>Fri, 07 Jan 2000 00:00:00 +0800</pubDate>
-      <guid>https://turnaoo.top/p/pagination-test-07/</guid>
-      <description>Test post 07 for pagination behavior.</description>
-    </item>
-    <item>
-      <title>Pagination Test 06</title>
-      <link>https://turnaoo.top/p/pagination-test-06/</link>
-      <pubDate>Thu, 06 Jan 2000 00:00:00 +0800</pubDate>
-      <guid>https://turnaoo.top/p/pagination-test-06/</guid>
-      <description>Test post 06 for pagination behavior.</description>
-    </item>
-    <item>
-      <title>Pagination Test 05</title>
-      <link>https://turnaoo.top/p/pagination-test-05/</link>
-      <pubDate>Wed, 05 Jan 2000 00:00:00 +0800</pubDate>
-      <guid>https://turnaoo.top/p/pagination-test-05/</guid>
-      <description>Test post 05 for pagination behavior.</description>
+      <title>AI &#43; Hugo 搭建个人博客</title>
+      <link>https://turnaoo.top/p/ai--hugo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Fri, 15 May 2026 00:00:00 +0800</pubDate>
+      <guid>https://turnaoo.top/p/ai--hugo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>&lt;h1 id=&#34;ai--hugo-搭建个人博客&#34;&gt;AI + Hugo 搭建个人博客&lt;/h1&gt;
+&lt;p&gt;最近我用 &lt;strong&gt;AI 辅助&lt;/strong&gt; + &lt;strong&gt;Hugo&lt;/strong&gt; 搭建了这个个人博客，记录一下整个过程和心得。&lt;/p&gt;
+&lt;h2 id=&#34;为什么选择-hugo&#34;&gt;为什么选择 Hugo？&lt;/h2&gt;
+&lt;p&gt;Hugo 是一个用 Go 语言编写的静态网站生成器，以&lt;strong&gt;速度快&lt;/strong&gt;、&lt;strong&gt;配置简单&lt;/strong&gt;而著称：&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
